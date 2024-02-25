@@ -1,24 +1,24 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdlib.h>
-
 /**
- * struct listint_s_minte - singly linked list
+ * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ *
  */
-typedef struct listint_s_minte
+typedef struct listint_s
 {
-	int n;
-	struct listint_s_minte *next;
-} listint_t_minte;
+    int n;
+    struct listint_s *next;
+} listint_t;
 
-size_t print_listint_minte(const listint_t_minte *h);
-listint_t_minte *add_nodeint_end_minte(listint_t_minte **head, const int n);
-void free_listint_minte(listint_t_minte *head);
-listint_t_minte *insert_node_minte(listint_t_minte **head, int number);
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
+listint_t *insert_node(listint_t **head, int number);
 
 #endif /* LISTS_H */

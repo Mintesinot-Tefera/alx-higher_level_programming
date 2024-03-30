@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """fetches https://intranet.hbtn.io/status.
-You must use the package requests:
+You must use the package requests
 """
-
 import requests
 
 

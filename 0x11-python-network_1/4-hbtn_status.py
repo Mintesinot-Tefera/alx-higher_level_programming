@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""fetches https://intranet.hbtn.io/status.
-You must use the package requests
-"""
+"""fetches https://intranet.hbtn.io/status."""
+
 import requests
 
 
